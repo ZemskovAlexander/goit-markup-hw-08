@@ -6,6 +6,7 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms $add-animation, visibility 250ms $add-animation;
+  overflow: scroll;
 }
 
 .backdrop.is-hidden {
@@ -23,11 +24,11 @@
   top: 50%;
   left: 50%;
 
-  width: 528px;
-  height: 581px;
+  width: 95vw;
+  min-height: 609px;
   padding-top: 44.5px;
   padding-left: 36px;
-  padding-right: 44px;
+  padding-right: 40px;
   padding-bottom: 35px;
 
   transform: translate(-50%, -50%) scale(1);
@@ -37,7 +38,25 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    padding-right: 44px;
+
+  }
+
+  @media screen and (rotate) {
+    top: 10px;
+    transform: translate(-50%) scale(1);
+  }
+
 }
+
 
 .btn-modal {
   position: absolute;
@@ -152,7 +171,7 @@
     border-color: $accent-color;
   }
 
-  &:focus + .modal-icon {
+  &:focus+.modal-icon {
     fill: $alternative-accent-color;
   }
 }
@@ -182,10 +201,15 @@
 
 .modal-form-checkbox-label {
   @extend %align-items;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: $primary-text-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 
   &::before {
     content: "";
@@ -204,20 +228,20 @@
 }
 
 .modal-form-checkbox {
-  &:checked + &-label::before {
+  &:checked+&-label::before {
     background-color: $alternative-accent-color;
     border: 0px;
     border-radius: 2px;
   }
 
-  &:focus + &-label::before {
+  &:focus+&-label::before {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 
 .modal-link-policy {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
 
@@ -227,6 +251,11 @@
   &:hover,
   &:focus {
     color: #1675c2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 
