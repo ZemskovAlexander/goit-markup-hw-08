@@ -1,0 +1,43 @@
+.section-team {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  color: $title-text-color;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+
+.aboutus {
+  background-color: $button-bg-color;
+}
+
+
+
+.card__description {
+  color: $title-text-color;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+.card__project {
+  color: $primary-text-color;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}

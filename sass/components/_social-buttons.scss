@@ -1,0 +1,119 @@
+.social__link {
+  cursor: pointer;
+  @extend %align-items;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $icon-noAction-color;
+  background-color: $primary-bg-color;
+
+  transition: background 250ms $add-animation;
+
+  &:hover,
+  &:focus {
+    align-items: center;
+    justify-content: center;
+    color: $primary-bg-color;
+    background-color: $accent-color;
+  }
+}
+
+.footer__link-logo {
+  padding-right: 70px;
+}
+
+.social__icon {
+  fill: currentColor;
+  transition: color 250ms $add-animation;
+}
+
+.social__link+.social__link {
+  margin-left: 10px;
+}
+
+.social {
+  display: flex;
+}
+
+/* Постоянные клиенты  */
+
+.clients__contact-link {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+  border-radius: 4%;
+  width: 170px;
+  height: 92px;
+  padding: 0;
+  color: $icon-noAction-color;
+  background-color: $primary-bg-color;
+  border: 1px solid $icon-noAction-color;
+
+  transition: color 250ms $add-animation;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: $primary-bg-color;
+    border: 1px solid rgba(33, 150, 243, 1);
+  }
+}
+
+.clients__item+.clients__item {
+  margin-left: 30px;
+}
+
+.element-icon {
+  @extend %align-items;
+  justify-content: center;
+}
+
+.social-footer__icon {
+  fill: currentColor;
+}
+
+.social-footer__link {
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $primary-bg-color;
+  background-color: $bgc-icon-footer;
+
+  transition: background-color 250ms $add-animation;
+
+  &:hover,
+  &:focus {
+    color: $primary-bg-color;
+    background-color: $accent-color;
+  }
+}
+
+.social-footer__link+.social-footer__link {
+  margin-left: 10px;
+}
+
+.join-list__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-bg-color;
+  padding-bottom: 20px;
+}
+
+.join-list {
+  padding-right: 93px;
+  display: inline-block;
+}

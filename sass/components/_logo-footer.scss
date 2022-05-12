@@ -1,0 +1,21 @@
+.footer__logotype-web {
+  color: $accent-color;
+
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 0.83;
+  letter-spacing: 0.03em;
+}
+
+.footer__logotype-studio {
+  color: $primary-bg-color;
+
+  font-size: 26px;
+  line-height: 0.83;
+  letter-spacing: 0.03em;
+}
+
+.footer__logotype {
+  display: inline-block;
+  margin-bottom: 20px;
+}
