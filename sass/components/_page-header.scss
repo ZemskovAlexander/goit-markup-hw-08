@@ -25,7 +25,13 @@
   display: flex;
   margin-left: 93px;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
+
+
 
 .site-nav__item+.site-nav__item {
   margin-left: 50px;
@@ -67,73 +73,6 @@
   }
 }
 
-header a {
-  padding: 24px 0px;
-}
-
-
-
-/* Contact */
-
-
-
-.connect__mail,
-.connect__tel {
-  position: relative;
-  padding: 32px 0;
-
-  color: $primary-text-color;
-  background-color: $primary-bg-color;
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  transition: color 250ms $add-animation;
-}
-
-.connect>li {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.connect {
-  display: flex;
-  margin-left: auto;
-}
-
-.connect__item+.connect__item {
-  margin-left: 50px;
-}
-
-.icon {
-  fill: currentColor;
-}
-
-.connect__item .icon {
-  padding-right: 10px;
-  justify-content: center;
-  align-items: center;
-  box-sizing: content-box;
-}
-
-/* .contact-top.contact {
-  display: flex;
-} */
-
-.connect__tel:hover,
-.connect__tel:focus {
-  color: $accent-color;
-  background-color: $primary-bg-color;
-}
-
-.connect__mail:hover,
-.connect__mail:focus {
-  color: $accent-color;
-  background-color: $primary-bg-color;
-}
+// header a {
+//   padding: 24px 0px;
+// }

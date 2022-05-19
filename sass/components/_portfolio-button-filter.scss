@@ -1,3 +1,11 @@
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+}
+
 .portfolio-filter__button-menu {
   cursor: pointer;
   color: $title-text-color;
@@ -14,10 +22,20 @@
   border-radius: 4px;
 
   padding: 6px 22px;
-  margin-left: 8px;
+  margin: 0 8px 15px 0;
 
-  transition: color 250ms $add-animation, background-color 250ms $add-animation,
-    box-shadow 250ms $add-animation;
+  @include tablet {
+    margin: 0 8px 0 0;
+  }
+
+  @include desktop {
+    margin: 0 8px 0 0;
+
+  }
+
+  transition: color 250ms $add-animation,
+  background-color 250ms $add-animation,
+  box-shadow 250ms $add-animation;
 
   &:hover,
   &:focus {
@@ -33,11 +51,21 @@
 }
 
 .portfolio-filter {
+  flex-wrap: wrap;
+  justify-content: left;
   display: flex;
-  justify-content: center;
 
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @include tablet {
+    justify-content: center;
+  }
+
+  @include desktop {
+
+    justify-content: center;
+  }
 }
 
 /* Button */
