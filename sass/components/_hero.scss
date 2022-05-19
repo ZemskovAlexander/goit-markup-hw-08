@@ -3,13 +3,13 @@
   background-color: $hero-bg-color;
   width: 480px;
 
-  @media screen and (min-width: 1200px) {
+  // @media screen and (min-width: 1200px) {
 
-    width: 1600px;
-    padding-top: 200px;
-    padding-bottom: 280px;
+  //   width: 1600px;
+  //   padding-top: 200px;
+  //   padding-bottom: 280px;
 
-  }
+  // }
 
   padding-top: 118px;
   padding-bottom: 198px;
@@ -17,9 +17,9 @@
   margin-left: auto;
   outline: 1px solid black;
   background-image: linear-gradient(to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),
-  url(../images/background.jpg);
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/background.jpg);
 
   background-repeat: no-repeat;
   background-position: center;

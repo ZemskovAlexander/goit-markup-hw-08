@@ -4,6 +4,7 @@ footer {
   padding-bottom: 60px;
 }
 
+
 .adress__geo {
   color: $primary-bg-color;
   font-style: normal;
@@ -14,15 +15,54 @@ footer {
 
   margin-bottom: 9px;
 }
+
 .footer__flex-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+
+
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {}
+}
+
+.join-list__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-bg-color;
+
+  padding-bottom: 20px;
+  margin-top: 60px;
+}
+
+.join-list {
+
+  display: inline-block;
+
+  @include tablet {
+    padding-right: 90px;
+
+  }
+
+  @include desktop {
+    padding-left: 70px;
+  }
 }
 
 .contact-form-mail-label {
   display: block;
   margin-bottom: 20px;
+  margin-top: 60px;
 
   color: $primary-bg-color;
   font-weight: 700;
@@ -33,21 +73,35 @@ footer {
 }
 
 .contact-form-mail {
-  margin-right: 12px;
+
   padding: 15px 16px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   color: $primary-bg-color;
+
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: #2f303a;
   outline: none;
+
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
   }
+
   &:focus {
     outline: 2px solid $accent-color;
+  }
+
+  @include tablet {
+    margin-left: 151px;
+    margin-right: 137px;
+  }
+
+  @include desktop {
+    margin-right: 12px;
+    margin-left: 0;
+    width: 358px;
   }
 }
 
@@ -76,6 +130,16 @@ footer {
   &:hover {
     background-color: rgba(33, 150, 243, 0.9);
   }
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
+
+  @include tablet {
+    // display: block;
+
+  }
+
 }
 
 .btn-footer-icon {

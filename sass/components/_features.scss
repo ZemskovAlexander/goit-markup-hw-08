@@ -12,6 +12,7 @@
 
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
+    margin-left: 30px;
 
   }
 
@@ -33,17 +34,20 @@
   @media screen and (min-width: 1200px) {
     width: 270px;
 
+
   }
 }
 
+.work {
+  @media screen and (max-width: 1200px) {
+    display: none;
 
-.flex-cont {
-  display: flex;
+  }
+
 }
 
-// .flex-cont__item+.flex-cont__item {
-//   margin-left: 30px;
-// }
+
+
 
 /* .flex-cont .flex-section + .flex-section {
   margin-left: 30px;

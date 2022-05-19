@@ -1,0 +1,21 @@
+.contact-ft__contact {
+    color: $primary-text-color;
+    background-color: $hero-bg-color;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    transition: color 250ms $add-animation;
+
+    &:hover,
+    &:focus {
+        color: $primary-bg-color;
+    }
+}
+
+.contact-ft__item+.contact-ft__item {
+    margin-top: 9px;
+}
