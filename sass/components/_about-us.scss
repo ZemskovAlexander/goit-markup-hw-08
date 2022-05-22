@@ -2,18 +2,14 @@
     background-color: $primary-bg-color;
 
     display: inline-block;
-    margin: 15px;
+    margin: 15px 0 15px 0;
     justify-content: center;
     width: 100%;
-
-    @include mobile {
-        width: 354px;
-    }
 
 
     @include tablet {
         flex-basis: calc((100% - 4 * 15px) / 2);
-
+        margin: 15px;
     }
 
     @include desktop {

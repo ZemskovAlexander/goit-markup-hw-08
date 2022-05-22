@@ -12,9 +12,6 @@
 
     @include tablet {
         display: block;
-
-
-
     }
 }
 
@@ -27,18 +24,34 @@
     background-color: $primary-bg-color;
     font-family: Roboto, sans-serif;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    @include tablet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        line-height: 1.14;
+
+    }
 
     transition: color 250ms $add-animation;
 }
 
 .connect__tel {
-    text-align: left;
+    font-size: 34px;
+    line-height: 1.17;
+    color: $primary-text-color;
+    color: $accent-color;
+
+    @include tablet {
+        color: $primary-text-color;
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.14;
+    }
 }
 
 .connect>li {
@@ -63,10 +76,14 @@
 }
 
 .connect__item .icon {
-    padding-right: 10px;
-    justify-content: center;
-    align-items: center;
-    box-sizing: content-box;
+    display: none;
+
+    @include tablet {
+        padding-right: 10px;
+        justify-content: center;
+        align-items: center;
+        box-sizing: content-box;
+    }
 }
 
 /* .contact-top.contact {
