@@ -499,6 +499,7 @@ img {
 }
 
 .mobile-social {
+  position: relative;
   display: inline-block;
   font-weight: 500;
   font-size: 18px;
@@ -509,6 +510,14 @@ img {
 
 .mobile-social + .mobile-social {
   margin-left: 10px;
+}
+
+.mobile-social::after {
+  content: '';
+  width: 22px;
+  height: 1px;
+  color: rgba(33, 33, 33, 0.2);
+  position: absolute;
 }
 
 .mobile-social-list {
@@ -557,7 +566,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
   }
 }
@@ -573,7 +582,7 @@ img {
   .connect__tel {
     color: #757575;
     text-align: left;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
   }
 }
@@ -599,7 +608,7 @@ img {
 }
 
 .connect__item .icon {
-  padding-right: 10px;
+  padding-right: 8px;
   justify-content: center;
   align-items: center;
   box-sizing: content-box;
@@ -608,6 +617,12 @@ img {
 @media screen and (max-width: 767px) {
   .connect__item .icon {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .connect__item .icon {
+    padding-right: 10px;
   }
 }
 
@@ -630,8 +645,7 @@ img {
   text-align: center;
   background-color: #2f303a;
   width: 100%;
-  padding-top: 118px;
-  padding-bottom: 198px;
+  padding: 200px 0;
   margin-right: auto;
   margin-left: auto;
   outline: 1px solid black;
@@ -661,8 +675,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    padding-top: 200px;
-    padding-bottom: 280px;
+    padding: 200px 0;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Header-1600.jpg);
   }
 }
@@ -677,21 +690,18 @@ img {
   color: #ffffff;
   font-weight: 900;
   font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 360px;
   margin-top: 0px;
-  margin-bottom: 30px;
-  padding: 0;
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .hero-title {
     font-size: 44px;
     line-height: 1.36;
-    width: 696px;
-    margin-bottom: 60px;
   }
 }
 

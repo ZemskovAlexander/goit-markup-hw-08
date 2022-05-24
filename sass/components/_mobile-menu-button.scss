@@ -92,6 +92,8 @@
 }
 
 .mobile-social {
+    position: relative;
+
     display: inline-block;
     font-weight: 500;
     font-size: 18px;
@@ -102,6 +104,15 @@
 
     &+& {
         margin-left: 10px;
+    }
+
+    &::after {
+        content: '';
+        width: 22px;
+        height: 1px;
+        color: rgba(33, 33, 33, 0.2);
+        position: absolute;
+
     }
 }
 

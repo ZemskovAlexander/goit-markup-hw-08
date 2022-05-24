@@ -3,8 +3,7 @@
   background-color: $hero-bg-color;
   width: 100%;
 
-  padding-top: 118px;
-  padding-bottom: 198px;
+  padding: 200px 0;
   margin-right: auto;
   margin-left: auto;
   outline: 1px solid black;
@@ -44,8 +43,7 @@
   }
 
   @include desktop {
-    padding-top: 200px;
-    padding-bottom: 280px;
+    padding: 200px 0;
 
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
@@ -67,22 +65,21 @@
   color: $primary-bg-color;
   font-weight: 900;
   font-size: 26px;
-  // line-height: 1.38px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  width: 360px;
+  // width: 360px;
 
   margin-top: 0px;
-  margin-bottom: 30px;
-  padding: 0;
+  padding-bottom: 30px;
+  // padding: 0;
 
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
-    width: 696px;
-    margin-bottom: 60px;
+    // width: 696px;
 
   }
 
