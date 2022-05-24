@@ -33,7 +33,67 @@
             <a href="" class="site-nav__link">Контакты</a>
           </li>
         </ul>
+
+        <!-- ---------Mobile Menu--------------------- -->
+
+        <button type:="button" class="mobile-menu-button js-open-menu" aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg width=" 24" height="16" aria-label="переключатель мобильного меню">
+            <use class="icon-close-mob" href="./icon/sprite.svg#icon-close-mob"></use>
+            <use class="icon-menu" href="./icon/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg fill="currentColor" width="19" height="19">
+              <use class="icon-close-mob" href="./icon/sprite.svg#icon-close-mob"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link ">Студия</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link site-nav__link--active">Портфолио</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="connect-mobile list">
+            <li class="connect__item">
+              <a class="connect__mail" href="mailto:info@devstudio.com">
+                <svg class="icon" width="16" height="12">
+                  <use href="./icon/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a>
+            </li>
+
+            <li class="connect__item">
+              <a href="tel:+380961111111" class="connect__tel">
+                <svg class="icon" width="10" height="16">
+                  <use href="./icon/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-social-list list">
+            <a href="" class="mobile-social">Instagram</a>
+            <a href="" class="mobile-social">Twitter</a>
+            <a href="" class="mobile-social">Facebook</a>
+            <a href="" class="mobile-social">Linkedin</a>
+          </ul>
+
+        </div>
+
+        <!-- -------------End Mobile Menu----------------- -->
+
       </nav>
+
 
       <ul class="connect list">
         <li class="connect__item">
@@ -305,6 +365,7 @@
   </footer>
 
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

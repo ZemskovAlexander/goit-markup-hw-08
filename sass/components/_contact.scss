@@ -76,13 +76,13 @@
 }
 
 .connect__item .icon {
-    display: none;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
 
-    @include tablet {
-        padding-right: 10px;
-        justify-content: center;
-        align-items: center;
-        box-sizing: content-box;
+    @media screen and (max-width: 767px) {
+        display: none;
     }
 }
 
